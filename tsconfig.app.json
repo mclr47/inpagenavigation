@@ -7,7 +7,14 @@
   },
   "files": [
     "src/main.ts",
-    "src/polyfills.ts"
+    "src/polyfills.ts",
+    "node_modules/angular-contents/src/contents-link.directive.ts",
+    "node_modules/angular-contents/src/contents-section.directive.ts",
+    "node_modules/angular-contents/src/contents-table.directive.ts",
+    "node_modules/angular-contents/src/contents.directive.ts",
+    "node_modules/angular-contents/src/index.ts",
+    "/Users/arc/Documents/web_Dev2/ex/ang-toc-npm/node_modules/angular-contents/src/contents.module.ts",
+    "/Users/arc/Documents/web_Dev2/ex/ang-toc-npm/node_modules/angular-contents/src/html-utils.ts"
   ],
   "include": [
     "src/**/*.d.ts"

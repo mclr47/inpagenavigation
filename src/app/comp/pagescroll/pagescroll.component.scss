@@ -1,0 +1,48 @@
+.contents-table {
+   
+    position: absolute; 
+    padding: 2rem;
+  }
+  
+  .contents-table.sticky {
+    position: fixed; 
+    top: 0;
+  }
+  
+  .contents-table {
+    list-style: none;
+    margin: 0;
+  }
+  
+  .contents-table a {
+    border-radius: 4px;
+    display: block;
+    padding: 0.3rem 0.6rem;
+    color: #444;
+    text-decoration: none;
+  }
+  
+  .contents-table a.active {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .columnify > .table-column {
+    flex: 0 1 auto;
+    width: 220px;
+  }
+  
+ 
+  
+  .columnify {
+    display: flex;
+  }
+  
+  .columnify > * {
+    flex: 1;
+  }
+  
+  .columnify > *:not(:first-child) {
+    margin-left: 2rem;
+  }
+  
