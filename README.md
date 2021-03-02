@@ -13,6 +13,27 @@ the newInstance method missing or some other error detected on VSCode.
 
 Specific error from VSCode:
 "Property 'newInstance' does not exist on type 'typeof PageScrollInstance'.ts(2339)"
+>>>>>>>
+ resolution of the above ~~> change from official example :
+  https://github.com/zurfyx/angular-contents/tree/master/example
+
+  public animateScroll(sectionTarget: string): void {
+    // https://github.com/Nolanus/ngx-page-scroll#service
+    const pageScrollInstance: PageScrollInstance = PageScrollInstance.newInstance({
+      document: this.document, scrollTarget: sectionTarget, scrollingViews: [this.container.nativeElement]
+    });
+    this.pageScrollService.start(pageScrollInstance);
+  }
+
+   ~~~ with :
+  public animateScroll(sectionTarget: string): void {
+    // https://github.com/Nolanus/ngx-page-scroll#service
+    const pageScrollInstance: PageScrollInstance = this.pageScrollService.create({
+      document: this.document, scrollTarget: sectionTarget, scrollViews: [this.container.nativeElement]
+    });
+    this.pageScrollService.start(pageScrollInstance);
+  }
+
 >>>>>>
   used the following resources to help with the problem:
   https://github.com/Nolanus/ngx-page-scroll/issues/122
